@@ -42,3 +42,9 @@ jobs:
       - run: gradle clean build -x test
       # run tests!
       - run: gradle test
+
+      - store_artifacts:
+          path: target/circleci-demo.jar
+          
+
+
